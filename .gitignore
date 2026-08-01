@@ -1,0 +1,25 @@
+# Machine-local research activity
+runs/*
+!runs/.gitkeep
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+
+# Editors and operating systems
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Common large or generated outputs
+build/
+dist/
+*.log
+*.tmp
+*.checkpoint

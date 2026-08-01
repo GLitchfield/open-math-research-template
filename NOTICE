@@ -1,0 +1,21 @@
+This project includes an adaptation of the Wayfinder decision-map framework
+from mattpocock/skills:
+
+  https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder
+
+Upstream license notice:
+
+  MIT License
+  Copyright (c) 2026 Matt Pocock
+
+The full MIT terms are reproduced in this repository's LICENSE and apply to
+the adapted material as permitted by the upstream license.
+
+Material adaptations in this template include:
+
+- a committed local-Markdown tracker instead of an ephemeral scratch tracker;
+- explicit decision criteria, outcome branches, evidence links, and blockers;
+- execution-aware rules for bounded mathematical computation;
+- numbered experiment notes and reproducibility/provenance requirements; and
+- a read-only dual-model adversarial-review gate for strategic Wayfinder
+  selection, redirection, closure, and frontier promotion.

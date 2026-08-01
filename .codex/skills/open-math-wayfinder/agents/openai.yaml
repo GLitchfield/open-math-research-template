@@ -1,0 +1,4 @@
+interface:
+  display_name: "Open Math Wayfinder"
+  short_description: "Run decision-led mathematics research with adversarial review"
+  default_prompt: "Use the repository Wayfinder map and Sol/Fable evidence review to advance the next bounded mathematics research decision."
