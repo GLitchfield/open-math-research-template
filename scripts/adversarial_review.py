@@ -661,7 +661,8 @@ def build_parser() -> argparse.ArgumentParser:
                      help="repository-relative UTF-8 text file; repeat as needed")
     run.add_argument("--output", required=True,
                      help="ignored run directory, normally runs/reviews/NAME")
-    run.add_argument("--claude-model", default="claude-fable-5")
+    run.add_argument("--claude-model", required=True,
+                     help="exact Claude model identifier to pin in provenance")
     run.add_argument("--codex-model", required=True,
                      help="exact Codex model identifier to pin in provenance")
     run.add_argument("--rounds", type=int, choices=(0, 1), default=1)

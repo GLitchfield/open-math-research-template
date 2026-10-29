@@ -35,8 +35,8 @@ python3 scripts/adversarial_review.py doctor
    ignored `runs/reviews/`.
 3. Name every evidence file explicitly. Directories, binary files, external
    paths, and oversized packets are rejected.
-4. Pin both model identifiers. Claude defaults to `claude-fable-5`; Codex has
-   no moving default.
+4. Name both model identifiers with `--claude-model` and `--codex-model`.
+   Neither has a default, so every run records exactly which models it used.
 5. Inspect both blind answers before their reciprocal critiques.
 6. Independently check material objections. Record their disposition and the
    packet hash in the Wayfinder ticket.
@@ -46,7 +46,8 @@ python3 scripts/adversarial_review.py run \
   --question-file runs/reviews/question.txt \
   --evidence docs/wayfinder/tickets/0001-question.md \
   --evidence docs/experiments/0001-result.md \
-  --codex-model gpt-5.6-sol \
+  --claude-model CLAUDE_MODEL_ID \
+  --codex-model CODEX_MODEL_ID \
   --output runs/reviews/0001
 ```
 
